@@ -1,0 +1,63 @@
+/* START HERO SECTION */ 
+/* ============================================== */ 
+#hero {
+    margin-top: 200px;
+    width: 100%;
+    height: 300px;
+}
+#hero .container {
+    height: 300px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero .container form {
+    width: 90%;
+    background-color: #fff;
+    height: 55px;
+    align-items: center;
+    padding: 0 20px;
+}
+#hero .container form input,
+#hero .container form button {
+    height: 45px;
+}
+#hero .container form button {width: 50px;}
+#hero .container form div {width: 80%;}
+#hero .container form input {
+   margin-left: 20px;
+   width: 80%;
+   font-size: 18px;
+}
+/* START CATEGORIES SECTION */ 
+/* ============================================== */ 
+#categories {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    margin-top: 80px;
+}
+#categories h1 {margin-bottom: 20px;}
+#categories span {font-size: 15px;}
+#categories .categories-container .category {
+    width: 20%;
+    height: 150px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#categories .categories-container .category h3 {
+    width: 90%;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+@media (max-width: 700px) {
+    #categories .categories-container {flex-wrap: wrap;}
+    #categories .categories-container .category {width: 45%; margin-bottom: 50px;}
+}
+

@@ -1,0 +1,128 @@
+* {margin: 0; padding: 0; font-family: 'Alegreya Sans SC', sans-serif; box-sizing: border-box;}
+ul {list-style: none;}
+a {text-decoration: none; color: #000;}
+input, button {outline: 0; border: 0;}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.sp-btn {
+    background-color: #808080;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* START HEADER */ 
+/* ====================================== */ 
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #eaeaea;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header .head-1{background-color: #000;}
+header .head-1 .container {
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .head-1 .container a {color: #ffffff; margin-left: 20px; font-weight: 700;}
+header .head-2 .container {
+    height: 80px;
+    align-items: center;
+}
+header .head-2 .container .links, header .head-2 .container ul {display: flex;}
+header .head-2 .container .links {align-items: center;}  
+header .head-2 .container .links a {margin-left: 20px; font-weight: 600; font-size: 20px;}
+header .head-2 .container a.cart {
+    position: relative;
+    margin-left: 60px;
+    font-size: 30px;
+}
+header .head-2 .container a.cart::before {
+    content: '1';
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 8px;
+    border-radius: 50%;
+    left: -30px;
+    bottom: 8px;
+}
+header .head-2 .container i.navBtn{
+    font-size: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+/* NAV BAR  ============== */
+@media (max-width: 700px) {
+    header .head-2 .container i.navBtn {display: block;}
+    header .nav-menu {
+        position: fixed;
+        right:-100%;
+        top: 120px;
+        background-color: #000;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transition: 1s;
+    }
+    header .nav-menu li {
+        margin: 15px 0;
+    }
+    header .nav-menu li a {color: #fff;}
+    header .nav-menu.active {left: 0;}
+}
+
+
+
+
+
+/* START FOOTER */ 
+/* ====================================== */ 
+footer {
+    width: 100%;
+    height: 320px;
+    margin-top: 80px;
+}
+footer .foot-1 {
+    background-color: #eaeaea;
+}
+footer .foot-1 .container {height: 280px; align-items: center; flex-wrap: wrap;} 
+footer .foot-1 .container .links {width: 500px;}
+footer .foot-1 .links ul {
+    margin-top: 10px;
+    display: flex;
+}
+footer .foot-1 .links ul li {margin-right: 20px;}
+footer .foot-1 .links ul li a {font-size: 20px; font-weight: 700}
+
+footer .foot-2 {background-color: #000;}
+footer .foot-2 .container { height: 40px; align-items: center;}
+footer .foot-2 a {color: #ffffff;}
+
+footer .foot-1 .subscribe form  {margin: 5px 0 15px 0;}
+footer .foot-1 .subscribe input,
+footer .foot-1 .subscribe button {height: 40px; padding: 0 20px; font-size: 20px;}
+footer .foot-1 .subscribe input {
+    width: 300px;
+    padding: 0 10px;
+    border: 2px solid #808080;
+}
+footer .foot-1 .subscribe p {font-weight: 600;}
+footer .foot-1 .subscribe a {text-decoration: underline ;}
+
+@media (max-width: 700px) {
+    footer .foot-1 .subscribe input {width: 230px;}
+}
