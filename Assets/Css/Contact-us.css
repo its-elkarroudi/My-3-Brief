@@ -15,6 +15,10 @@ select {
     font-weight: 600;
     border: 2px solid #808080;
 }
+select {
+    background-color: #ddd;
+    color: #000;
+}
 #contact form input[type="email"], 
 #contact form input[type="text"],
 #contact form input[type="tel"],

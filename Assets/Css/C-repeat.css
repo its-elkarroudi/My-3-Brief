@@ -83,7 +83,7 @@ header .head-2 .container i.navBtn{
     }
     header .nav-menu li a {color: #fff;}
     header .nav-menu.active {left: 0;}
-}
+} 
 
 
 
@@ -125,4 +125,37 @@ footer .foot-1 .subscribe a {text-decoration: underline ;}
 
 @media (max-width: 700px) {
     footer .foot-1 .subscribe input {width: 230px;}
+}
+
+
+
+/* START CATEGORIES SECTION */ 
+/* ============================================== */ 
+#categories {
+    width: 100%;
+    height: auto;
+    /* padding: 30px 0; */
+    margin-top: 80px;
+}
+#categories h1 {margin-bottom: 20px;}
+#categories span {font-size: 15px;}
+#categories .categories-container .category {
+    width: 20%;
+    height: 150px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#categories .categories-container .category h3 {
+    width: 90%;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+@media (max-width: 700px) {
+    #categories .categories-container {flex-wrap: wrap;}
+    #categories .categories-container .category {width: 45%; margin-bottom: 50px;}
 }
