@@ -49,7 +49,7 @@ header .head-2 .container a.cart {
     font-size: 30px;
 }
 header .head-2 .container a.cart::before {
-    content: '1';
+    content: '0';
     position: absolute;
     background-color: #000;
     color: #fff;

@@ -12,6 +12,7 @@
     margin: 10px 0;
 }
 #faq .contentBox .title {
+    position: relative;
     align-items: center;
     position: relative;
     padding: 10px;
@@ -20,9 +21,21 @@
     cursor: pointer;
     border: 2px solid #808080;
 }   
-#faq .contentBox .title i {
-    font-size: 20px;
+#faq .contentBox .title::before {
+    content: '+';
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
+#faq .contentBox.active .title::before {
+    content: '-';
+    color: #fff;
+}
+/* #faq .contentBox .title i {
+    font-size: 20px;
+} */
 #faq .contentBox .content {
     text-align: justify;
     position: relative;
