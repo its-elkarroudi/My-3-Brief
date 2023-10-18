@@ -26,6 +26,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 header .head-1{background-color: #000;}
 header .head-1 .container {
