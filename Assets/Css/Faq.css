@@ -1,0 +1,44 @@
+#faq {margin-top: 200px;}
+#faq .hero {
+    margin-bottom: 20px;
+}
+#faq .hero h1 {font-size: 30px;font-weight: 900;}
+#faq .hero h3 {font-size: 20px; text-align: justify;}
+
+
+
+#faq .contentBox {
+    position: relative;
+    margin: 10px 0;
+}
+#faq .contentBox .title {
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    background-color:  #eaeaea;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid #808080;
+}   
+#faq .contentBox .title i {
+    font-size: 20px;
+}
+#faq .contentBox .content {
+    text-align: justify;
+    position: relative;
+    /* padding: 10px; */
+    background-color: #eaeaea;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#faq .contentBox.active .title {
+    background-color: #808080;
+    color: #fff;
+    transition: 1s;
+}
+#faq .contentBox.active .content {
+    height: auto;
+    padding: 20px 10px;
+    /* transition-duration: 1s; */
+}

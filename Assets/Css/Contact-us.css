@@ -70,8 +70,6 @@ form .big-container .input-container textarea.valid,
 form .big-container .input-container select.valid {
     border:2px solid green;
 }
-
-
 .hidden {display: none;}
 
 

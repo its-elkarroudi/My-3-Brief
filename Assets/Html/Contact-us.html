@@ -94,7 +94,7 @@
                         </div>
 
                         <div class="input-container">
-                            <input type="text" name="phone" placeholder="06 00 00 00 00">
+                            <input type="tel" name="phone" placeholder="06 00 00 00 00" minlength="10" maxlength="10">
                             <i class="fa-solid fa-circle-exclamation hidden"></i>
                         </div>
                     </div>
@@ -107,16 +107,9 @@
 
                         <div class="input-container">
                             <select name="country">
-                                <option value="">choose your country</option>
                                 <option value="morocco">morocco</option>
-                                <option value="spain">spain</option>
-                                <option value="france">france</option>
-                                <option value="portugal">portugal</option>
-                                <option value="egypt">egypt</option>
-                                <option value="libya">libya</option>
-                                <option value="sudan">sudan</option>
-                                <option value="tunisia">tunisia</option>
                             </select>
+                            <!-- <input type="text" name="country" readonly value="morocco"> -->
                             <i class="fa-solid fa-circle-exclamation hidden"></i>
                         </div>
                     </div>
@@ -131,7 +124,7 @@
 
                     <div class="d-flex sending">
                         <div>
-                            <input type="checkbox" name="agreement" id="agreement">
+                            <input type="checkbox" name="agreement" id="agreement" class="invalid" checked>
                             <label for="agreement">Agree To <a href="#"><u>Privacy policy</u></a></label>
                         </div>
 

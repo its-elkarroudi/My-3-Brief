@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONTS AWESOME -->
+    <script src="https://kit.fontawesome.com/da6b47f324.js" crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="../Css/C-repeat.css">
+    <link rel="stylesheet" href="../Css/Faq.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- START HEADER SECTION -->
+    <header>
+
+        <div class="head-1">
+            <div class="container">
+                <a href="../Html/Faq.html">faq</a>
+                <a href="">help center</a>
+            </div>
+        </div>
+
+        <div class="head-2">
+            <div class="container d-flex">
+
+                <div class="logo">
+                    <a href="../../index.html">
+                        <img src="../Img/Logo/logo.png" alt="Website Logo">
+                    </a>
+                </div>
+
+                <div class="links">
+
+                    <ul class="nav-menu">
+                        <li><a href="../../index.html">home</a></li>
+                        <li><a href="../Html/Categorie-details.html">men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="../Html/Contact-us.html">contact us</a></li>
+                    </ul>
+
+                    <a href="#" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <i class="fa-solid fa-bars navBtn"></i>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER SECTION -->
+
+    <!-- START FAQ SECTION -->
+    <section id="faq">
+        <div class="container">
+
+            <div class="hero">
+                <h1>contact us</h1>
+                <h3>It is a long established fact that a reader will be distracted .</h3>
+            </div>
+
+            <div class="contentBox active">
+                <h2 class="title d-flex">Question 1 <i class="fa-solid fa-plus"></i> </h2>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum saepe dolor illo porro quo odit maiores corporis cumque ratione?
+                </div>
+            </div>
+
+            <div class="contentBox">
+                <h2 class="title d-flex">Question 2 <i class="fa-solid fa-plus"></i></h2>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum saepe dolor illo porro quo odit maiores corporis cumque ratione?
+                </div>
+            </div>
+
+            <div class="contentBox">
+                <h2 class="title d-flex">Question 3 <i class="fa-solid fa-plus"></i></h2>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum saepe dolor illo porro quo odit maiores corporis cumque ratione?
+                </div>
+            </div>
+
+            <div class="contentBox">
+                <h2 class="title d-flex">Question 4 <i class="fa-solid fa-plus"></i></h2>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum saepe dolor illo porro quo odit maiores corporis cumque ratione?
+                </div>
+            </div>
+
+            <div class="contentBox">
+                <h2 class="title d-flex">Question 5 <i class="fa-solid fa-plus"></i></h2>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum saepe dolor illo porro quo odit maiores corporis cumque ratione?
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END FAQ SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <footer>
+
+        <div class="foot-1">
+            <div class="container d-flex">
+
+                <div class="links">
+                    <a href="../Img/Logo/logo.png">
+                        <img src="../Img/Logo/logo.png" alt="website logo">
+                    </a>
+
+                    <ul>
+                        <li><a href="../../index.html">home</a></li>
+                        <li><a href="../Html/Categorie-details.html">men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="../Html/Contact-us.html">contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribe">
+                    <h2>subscribe</h2>
+
+                    <form action="">
+                        <input type="email" placeholder="email address" name="email" required>
+                        <button type="submit" class="sp-btn">send</button>
+                    </form>
+
+                    <p>by subscribing you agree to our <a href="">privacy policy</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="foot-2">
+            <div class="container d-flex">
+                <a href="">faq</a>
+                <a href="">all right reserved</a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+
+
+
+    <script src="../Javascript/Burger-menu.js"></script>
+    <script>
+        const showResponse = document.getElementsByClassName('contentBox');
+
+        for (i = 0; i<showResponse.length; i++) {
+            showResponse[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+            })
+        }
+
+    </script>
+
+
+</body>
+</html>

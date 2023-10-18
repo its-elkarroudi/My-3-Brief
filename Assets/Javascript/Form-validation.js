@@ -4,9 +4,10 @@ const lastName = document.querySelector('input[name="lastName"]');
 const email = document.querySelector('input[name="email"]');
 const phone = document.querySelector('input[name="phone"]');
 const topic = document.querySelector('input[name="topic"]');
-const country = document.querySelector('select');
+// const country = document.querySelector('select');
 const message = document.querySelector('textarea[name="message"]');
-// const agreement = document.querySelector('input[name="agreement"]');
+
+const agreement = document.querySelector('input[name="agreement"]');
 
 const form = document.querySelector('form');
 let isFormValid = false;
@@ -62,11 +63,11 @@ const validateInputs = () => {
         isFormValid = false;
     }
 
-    if (country.value === '') {
-        country.classList.add('invalid');
-        country.nextElementSibling.classList.remove('hidden');
-        isFormValid = false;
-    }
+    // if (country.value === '') {
+    //     country.classList.add('invalid');
+    //     country.nextElementSibling.classList.remove('hidden');
+    //     isFormValid = false;
+    // }
 
     if (!message.value) {
         message.classList.add('invalid');
@@ -82,7 +83,7 @@ form.addEventListener('submit', (e) => {
     validateInputs();
 
     if (isFormValid == true) {
-        // form.remove();
+        form.remove();
         // thankYou.classList.remove('hidden');
     }
 })
