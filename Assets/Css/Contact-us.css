@@ -46,6 +46,19 @@ form .last-cnt textarea {
 }   
 form .last-cnt textarea {padding: 10px 0 0 20px; resize: none; outline: 0;}
 
+form .sending div {display: flex; align-items: center;}
+form .sending input {margin-right: 10px;}
+form .sending label {font-weight: 600;}
+form .sending button {
+    padding: 15px 25px;
+    background-color: #808080;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
 .invalid {
     border:2px solid red;
     background-color: rgb(242, 171, 171);
@@ -56,7 +69,7 @@ form .last-cnt textarea {padding: 10px 0 0 20px; resize: none; outline: 0;}
 @media (max-width:700px) {
 
     form .big-container .input-container {width: 100%;}
-    form input {margin-bottom: 20px;}
+    form .big-container input {margin-bottom: 20px;}
     form .big-container .input-container i {
         font-size: 20px;
         top: 15px;
@@ -67,5 +80,6 @@ form .last-cnt textarea {padding: 10px 0 0 20px; resize: none; outline: 0;}
         align-items: stretch;
         margin-bottom: 0;
     }
+    form .sending {margin-top: 20px;}
     
 }
