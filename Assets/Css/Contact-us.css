@@ -28,6 +28,7 @@ form .last-cnt textarea {
     font-size: 18px;
     font-weight: 700;
     border: 0;
+    border: 2px solid #ddd;
     
 }
 form .big-container select {background-color: #ddd; color: #808080;}
@@ -59,10 +60,18 @@ form .sending button {
 }
 
 
-.invalid {
+form .big-container .input-container input.invalid, 
+form .big-container .input-container textarea.invalid,
+form .big-container .input-container select.invalid {
     border:2px solid red;
-    background-color: rgb(242, 171, 171);
 }
+form .big-container .input-container input.valid, 
+form .big-container .input-container textarea.valid,
+form .big-container .input-container select.valid {
+    border:2px solid green;
+}
+
+
 .hidden {display: none;}
 
 
