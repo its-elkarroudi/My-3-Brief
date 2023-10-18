@@ -29,6 +29,11 @@ select {
     padding: 0 0 0 20px;
     
 }
+/* ============= */ 
+input.in-active {
+    border: 2px solid red;
+    color: red;
+}
 #contact .b-input {width: 100%;}
 #contact #agreement {width: 20px;}
 #contact form textarea {height: 120px; padding: 10px 10px 10px 20px; outline: none; }
@@ -40,6 +45,14 @@ select {
 
 #contact button {
     width: 70px;
+}
+
+#contact #errorMessage {
+    background-color: red;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 20px;
 }
 
 

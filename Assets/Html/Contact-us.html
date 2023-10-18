@@ -70,23 +70,25 @@
                 <h3>It is a long established fact that a reader will be distracted .</h3>
             </div>
 
-            <form action="#">
+            <form action="#" id="form">
+
+                <div id="errorMessage"></div> <!-- DIV TO DISPLAY ERROR MESSAGE -->
 
                 <div class="d-flex">
-                    <input type="text" name="first-name" placeholder="first name" required>
-                    <input type="text" name="last-name" placeholder="last name" required>
+                    <input type="text" class="ds" name="first-name" class="firstName" placeholder="first name" id="firstName">
+                    <input type="text" name="last-name" placeholder="last name" id="lastName">
                 </div>
 
                 <div class="d-flex">
-                    <input type="email" name="email" placeholder="email address" required>
-                    <input type="tel" name="phone-number" placeholder="06 00 00 00 00" required>
+                    <input type="email" name="email" placeholder="email address" id="email">
+                    <input type="text" name="phone-number" placeholder="06 00 00 00 00" id="phone">
                 </div>
 
                 <div class="d-flex">
-                    <input type="text" name="topic" placeholder="the topic of your message" required class="b-input">
+                    <input type="text" name="topic" placeholder="the topic of your message" id="topic" class="b-input">
 
-                    <select name="country" required>
-                        <option value="0">chose your country</option>
+                    <select name="country" id="country">
+                        <option value="0" selected>chose your country</option>
                         
                         <option value="Spain">Spain</option>
                         <option value="France">France</option>
@@ -99,7 +101,7 @@
                     </select>
                 </div>
 
-                <textarea name="message" placeholder="message" required class="b-input"></textarea>
+                <textarea name="message" placeholder="message" class="b-input" id="message"></textarea>
 
                 <div class="d-flex btn-div">
                     <div class="agree-div">
@@ -161,7 +163,8 @@
     <!-- END FOOTER SECTION -->
 
 
-    <script src="../Javascript/C-repeat.js"></script>
+    <script src="../Javascript/Burger-menu.js"></script>
+    <script src="../Javascript/Form-validation.js"></script>
 
 
 </body>
