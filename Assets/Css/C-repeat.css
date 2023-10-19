@@ -68,8 +68,8 @@ header .head-2 .container i.navBtn{
 }
 /* NAV BAR  ============== */
 @media (max-width: 700px) {
-    header .head-2 .container i.navBtn {display: block;}
-    header .nav-menu {
+    /* header .head-2 .container i.navBtn {display: block;} */
+    /* header .nav-menu {
         position: fixed;
         right:-100%;
         top: 120px;
@@ -78,13 +78,13 @@ header .head-2 .container i.navBtn{
         flex-direction: column;
         text-align: center;
         transition: 1s;
-    }
-    header .nav-menu li {
+    }  */
+     /* header .nav-menu li {
         margin: 15px 0;
-    }
-    header .nav-menu li a {color: #fff;}
+    }  */
+    /* header .nav-menu li a {color: #fff;} */
     header .nav-menu.active {left: 0;}
-} 
+}  
 
 
 
@@ -161,9 +161,7 @@ footer .foot-1 form  .subscribe-container i {
 
 
 
-@media (max-width: 700px) {
-    footer .foot-1 .subscribe input {width: 230px;}
-}
+
 
 
 
