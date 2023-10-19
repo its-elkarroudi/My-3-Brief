@@ -94,7 +94,7 @@
                         </div>
 
                         <div class="input-container">
-                            <input type="tel" name="phone" placeholder="06 00 00 00 00" minlength="10" maxlength="10">
+                            <input type="tel" name="phone" placeholder="06 00 00 00 00" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                             <i class="fa-solid fa-circle-exclamation hidden"></i>
                         </div>
                     </div>
@@ -133,6 +133,12 @@
 
 
                 </form>
+
+
+                <div class="thank-you d-flex hidden">
+                    <h1>Thank You For Your Message ! <br> We Will Be contacting You Soon</h1>
+                    <i class="fa-regular fa-hand-peace"></i>
+                </div>
             </div>
 
 

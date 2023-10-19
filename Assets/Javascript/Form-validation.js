@@ -9,6 +9,8 @@ const message = document.querySelector('textarea[name="message"]');
 
 const agreement = document.querySelector('input[name="agreement"]');
 
+const thankYou = document.querySelector('.thank-you');
+
 const form = document.querySelector('form');
 let isFormValid = false;
 
@@ -84,7 +86,7 @@ form.addEventListener('submit', (e) => {
 
     if (isFormValid == true) {
         form.remove();
-        // thankYou.classList.remove('hidden');
+        thankYou.classList.remove('hidden');
     }
 })
 
@@ -98,7 +100,7 @@ const validInput = (elm) => {
 
 
 
-// CHECKING AGAIN AFTER FAIL 
+// EVENT WHEN CLICKING ON INPUT
 firstName.addEventListener('input', () => {
     validateInputs();
     validInput(firstName);

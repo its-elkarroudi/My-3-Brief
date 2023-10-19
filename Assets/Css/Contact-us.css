@@ -72,6 +72,16 @@ form .big-container .input-container select.valid {
 }
 .hidden {display: none;}
 
+.form .thank-you {
+    background-color: #eaeaea;
+    padding: 50px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .thank-you i {
+    font-size: 100px;
+}
+
 
 @media (max-width:700px) {
 
@@ -88,5 +98,12 @@ form .big-container .input-container select.valid {
         margin-bottom: 0;
     }
     form .sending {margin-top: 20px;}
+    
+    .form .thank-you h1 {width: 100%;}
+    .form .thank-you {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .form .thank-you i {margin-top: 20px;}
     
 }

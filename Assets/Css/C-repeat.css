@@ -101,7 +101,8 @@ footer .foot-1 {
     background-color: #eaeaea;
 }
 footer .foot-1 .container {height: 280px; align-items: center; flex-wrap: wrap;} 
-footer .foot-1 .container .links {width: 500px;}
+footer .foot-1 .container .links {width: 350px;}
+
 footer .foot-1 .links ul {
     margin-top: 10px;
     display: flex;
@@ -123,6 +124,42 @@ footer .foot-1 .subscribe input {
 }
 footer .foot-1 .subscribe p {font-weight: 600;}
 footer .foot-1 .subscribe a {text-decoration: underline ;}
+/* ========= */ 
+footer .foot-1 form {
+    display: flex;
+}
+footer .foot-1 form input {margin-right: 2px;}
+footer .foot-1 form  .subscribe-container {position: relative;}
+footer .foot-1 form  .subscribe-container i {
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+
+
+.subscribe form input.subInvalid {
+    border: 2px solid red;
+}
+.subscribe form input.valid {
+    border: 2px solid green;
+}
+
+.subscribe form i.invalidBtn {
+    color: red;
+}
+
+.hidden {display: none;} 
+.subThankYou {
+    width: 400px;
+    align-items: center;
+    padding: 20px 15px;
+    border: 2px solid #808080;
+}
+.subThankYou i {
+    font-size: 40px;
+}
+
+
 
 @media (max-width: 700px) {
     footer .foot-1 .subscribe input {width: 230px;}
@@ -160,3 +197,5 @@ footer .foot-1 .subscribe a {text-decoration: underline ;}
     #categories .categories-container {flex-wrap: wrap;}
     #categories .categories-container .category {width: 45%; margin-bottom: 50px;}
 }
+
+

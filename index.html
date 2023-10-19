@@ -133,12 +133,20 @@
                 </div>
 
                 <div class="subscribe">
-                    <h2>subscribe</h2>
+                    <h2 class="subTitle">subscribe</h2>
 
-                    <form action="">
-                        <input type="email" placeholder="email address" name="email" required>
-                        <button type="submit" class="sp-btn">send</button>
+                    <form action="" id="subscribeForm">
+                        <div class="subscribe-container">
+                            <input type="email" placeholder="email address" name="subEmail" class="">
+                            <i class="fa-solid fa-circle-exclamation hidden subIcon"></i>
+                        </div>
+                        <button type="submit" class="sp-btn subButton" >send</button>
                     </form>
+
+                    <div class="subThankYou d-flex hidden">
+                        <h2>Thank You For Subscribing</h2>
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
 
                     <p>by subscribing you agree to our <a href="">privacy policy</a></p>
                 </div>
@@ -159,6 +167,7 @@
 
 
     <script src="Assets/Javascript/Burger-menu.js"></script>
+    <script src="Assets/Javascript/Subscribe-validation.js"></script>
 
 </body>
 </html>
