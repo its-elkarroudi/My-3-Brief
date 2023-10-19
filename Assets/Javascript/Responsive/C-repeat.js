@@ -6,6 +6,7 @@ function myFunction(x) {
     if (x.matches) {
         console.log('mobile size');
 
+        /* HEADER ELEMENTS */ 
         const button = document.querySelector('header .head-2 .container i.navBtn');
         const navMenu = document.querySelector('header .nav-menu');
         const navMenu_Li = document.querySelectorAll('header .nav-menu li');
@@ -34,14 +35,18 @@ function myFunction(x) {
                 a.style.color = '#ffffff';
             }
         }
-        if (navMenu_active) {navMenu_active.style.left = '0';}
+        if (navMenu_active) {
+            // navMenu_active.style.left = '0px';
+            console.log("log");
+        }
 
 
-
+        /* FOOTER ELEMENTS */ 
         const footerInput = document.querySelector('footer .foot-1 .subscribe input');
 
+        console.log(footerInput);
         if (footerInput) {
-            footerInput.style.width = '230px';
+            footerInput.style.width = '220px';
         }
 
 
