@@ -79,12 +79,13 @@ form .big-container .input-container textarea.invalid::placeholder {
 form .big-container .input-container input.valid, 
 form .big-container .input-container textarea.valid {
     border:2px solid green;
-}
-form .big-container .input-container input.valid, 
-form .big-container .input-container textarea.valid {
     color: green;
 }
-/* HIDDEN ELEMENST */ 
+form .big-container .input-container input.valid::placeholder, 
+form .big-container .input-container textarea.valid::placeholder {
+    color: green;
+}
+/* HIDDEN ELEMENTS */ 
 .hidden {display: none;}
 /* THANK YOU POP UP */
 .form .thank-you {

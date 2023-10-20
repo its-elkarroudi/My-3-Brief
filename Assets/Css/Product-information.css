@@ -1,0 +1,83 @@
+#product-section {
+    height: calc(100vh - 120px);
+    width: 100%;
+    /* background: aqua; */
+}
+#product-section .container {height: calc(100vh - 120px); align-items: center;}
+#product-section .product-images {
+    width: 32%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product-section .product-images .all-images {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#product-section .product-images .all-images img {cursor: pointer;}
+
+#product-section .product-images .big-image {height: 100%;}
+#product-section .product-images .big-image img {height: 100%;}
+
+
+
+
+
+
+#product-section .product-information {
+    width: 50%;
+    height: 60vh;
+    /* background-color: var(--third-color); */
+    display: flex;
+    align-items: center;
+}
+#product-section .product-information h1 {font-size: 30px; font-weight: 900;margin-bottom: 20px;}
+#product-section .product-information h1 span {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+#product-section .product-information h3 {font-size: 30px; margin-bottom: 5px;}
+#product-section .product-information p {font-size: 20px; text-align: justify; margin-bottom: 30px;}
+#product-section .product-information .price {color: var(--secondary-color);}
+#product-section .product-information .price del {margin-left: 30px; color: #000;}
+
+#product-section .product-information select {
+    width: 47%;
+    height: 40px;
+    color: #000;
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 20px;
+    outline: 0;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+#product-section .product-information .addArea {
+    margin-top: 10px;
+    height: 40px;
+}
+#product-section .product-information .addArea button {
+    width: 70%;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+#product-section .product-information .addArea input {
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    width: 25%;
+}
+/* ======== */
