@@ -18,7 +18,7 @@ function myFunction(x) {
             navMenu.style.position = 'fixed';
             navMenu.style.right = '-100%';
             navMenu.style.top = '120px';
-            navMenu.style.backgroundColor = '#000000';
+            navMenu.style.backgroundColor = '#28427B';
             navMenu.style.width = '100%';
             navMenu.style.flexDirection = 'column';
             navMenu.style.textAlign = 'center';

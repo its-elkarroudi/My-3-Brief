@@ -11,24 +11,31 @@ input, button {outline: 0; border: 0;}
     justify-content: space-between;
 }
 .sp-btn {
-    background-color: #808080;
+    background-color: var(--secondary-color);
     color: #fff;
     cursor: pointer;
 }
 
+
+/* ======= */
+:root {
+    --principal-color: #14213D;
+    --secondary-color: #28427B;
+    --third-color: #EDF2F4;
+}
 
 /* START HEADER */ 
 /* ====================================== */ 
 header {
     width: 100%;
     height: 120px;
-    background-color: #eaeaea;
+    background-color: var(--third-color);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
 }
-header .head-1{background-color: #000;}
+header .head-1{background-color: var(--principal-color);}
 header .head-1 .container {
     height: 40px;
     display: flex;
@@ -47,11 +54,12 @@ header .head-2 .container a.cart {
     position: relative;
     margin-left: 60px;
     font-size: 30px;
+    color: var(--secondary-color);
 }
 header .head-2 .container a.cart::before {
     content: '0';
     position: absolute;
-    background-color: #000;
+    background-color: var(--secondary-color);
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -98,7 +106,7 @@ footer {
     margin-top: 80px;
 }
 footer .foot-1 {
-    background-color: #eaeaea;
+    background-color: var(--third-color);
 }
 footer .foot-1 .container {height: 280px; align-items: center; flex-wrap: wrap;} 
 footer .foot-1 .container .links {width: 350px;}
@@ -110,7 +118,7 @@ footer .foot-1 .links ul {
 footer .foot-1 .links ul li {margin-right: 20px;}
 footer .foot-1 .links ul li a {font-size: 20px; font-weight: 700}
 
-footer .foot-2 {background-color: #000;}
+footer .foot-2 {background-color: var(--principal-color);}
 footer .foot-2 .container { height: 40px; align-items: center;}
 footer .foot-2 a {color: #ffffff;}
 
@@ -120,14 +128,15 @@ footer .foot-1 .subscribe button {height: 40px; padding: 0 20px; font-size: 20px
 footer .foot-1 .subscribe input {
     width: 300px;
     padding: 0 10px;
-    border: 2px solid #808080;
+    border: 2px solid var(--secondary-color);
 }
 footer .foot-1 .subscribe p {font-weight: 600;}
 footer .foot-1 .subscribe a {text-decoration: underline ;}
 
 /* ========= */ 
 footer .foot-1 form {display: flex;}
-footer .foot-1 form input {margin-right: 2px;}
+footer .foot-1 form input {margin-right: 2px; color: var(--secondary-color);}
+footer .foot-1 form input::placeholder {color: var(--secondary-color);}
 footer .foot-1 form  .subscribe-container {position: relative;}
 footer .foot-1 form  .subscribe-container i {
     position: relative;
@@ -172,6 +181,9 @@ footer .foot-1 form  .subscribe-container i {
     width: 20%;
     height: 150px;
     background-color: #eaeaea;
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: flex-end;

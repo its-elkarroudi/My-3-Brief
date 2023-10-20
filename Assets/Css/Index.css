@@ -7,10 +7,14 @@
 }
 #hero .container {
     height: 300px;
-    background-color: #eaeaea;
+    background-color: var(--third-color);
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    border: 2px solid var(--secondary-color);
 }
 #hero .container form {
     width: 90%;
@@ -18,6 +22,8 @@
     height: 55px;
     align-items: center;
     padding: 0 20px;
+    margin-bottom: 50px;
+    border: 2px solid var(--secondary-color);
 }
 #hero .container form input,
 #hero .container form button {
@@ -30,4 +36,6 @@
    width: 80%;
    font-size: 18px;
 }
-
+#hero .container form i {color: var(--secondary-color);}
+#hero .container form button i {color: var(--third-color);}
+#hero .container form input::placeholder {color: var(--secondary-color);}

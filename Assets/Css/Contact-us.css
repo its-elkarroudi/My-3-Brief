@@ -15,7 +15,7 @@ form .big-container {
 form .big-container .input-container {
     width: 48%;
     height: 50px;
-    background-color: #eaeaea;
+    background-color: var(--third-color);
     position: relative;
 }
 form .big-container .input-container input,
@@ -28,10 +28,14 @@ form .last-cnt textarea {
     font-size: 18px;
     font-weight: 700;
     border: 0;
-    border: 2px solid #ddd;
-    
+    border: 2px solid var(--secondary-color);   
 }
-form .big-container select {background-color: #ddd; color: #808080;}
+form .big-container .input-container input::placeholder,
+form .big-container select::placeholder,
+form .last-cnt textarea::placeholder {
+    color: var(--secondary-color);
+}
+form .big-container select {background-color: var(--third-color); color: var(--secondary-color);}
 form .big-container .input-container i {
     position: absolute;
     top: 10px;
@@ -50,36 +54,49 @@ form .last-cnt textarea {padding: 10px 0 0 20px; resize: none; outline: 0;}
 form .sending div {display: flex; align-items: center;}
 form .sending input {margin-right: 10px;}
 form .sending label {font-weight: 600;}
+
 form .sending button {
     padding: 15px 25px;
-    background-color: #808080;
+    background-color: var(--secondary-color);
     color: #fff;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
 }
 
-
+/* INVALID INPUTS */ 
 form .big-container .input-container input.invalid, 
-form .big-container .input-container textarea.invalid,
-form .big-container .input-container select.invalid {
+form .big-container .input-container textarea.invalid {
     border:2px solid red;
+    color: red;
 }
+form .big-container .input-container input.invalid::placeholder, 
+form .big-container .input-container textarea.invalid::placeholder {
+    color: red;
+}
+
+/* VALID INPUTS */ 
 form .big-container .input-container input.valid, 
-form .big-container .input-container textarea.valid,
-form .big-container .input-container select.valid {
+form .big-container .input-container textarea.valid {
     border:2px solid green;
 }
+form .big-container .input-container input.valid, 
+form .big-container .input-container textarea.valid {
+    color: green;
+}
+/* HIDDEN ELEMENST */ 
 .hidden {display: none;}
-
+/* THANK YOU POP UP */
 .form .thank-you {
-    background-color: #eaeaea;
+    background-color: var(--third-color);
     padding: 50px 40px;
     justify-content: space-between;
     align-items: center;
 }
 .form .thank-you i {
     font-size: 100px;
+    color: var(--secondary-color);
+
 }
 
 

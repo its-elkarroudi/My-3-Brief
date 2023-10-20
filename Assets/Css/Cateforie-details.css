@@ -27,7 +27,7 @@
 #product-sec .container .product {
     width: 20%;
     height: 350px;
-    background-color: #eaeaea;
+    background-color: var(--third-color);
 
     display: flex;
     flex-direction: column;
