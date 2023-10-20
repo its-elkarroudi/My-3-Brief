@@ -59,6 +59,9 @@
 #second .container .sec-content p {text-align: justify;}
 
 @media (max-width: 700px) {
+    #second .container .sec-content h1 {margin-bottom: 5px;}
+
+    #second .container .sec-content img {width: 25%;}
     #second .container .sec-content {width: 100%;}
     #second .container .sec-content div {
         width: 62%;
@@ -109,7 +112,9 @@
     #contactSupport .support-container .person {
         width: 100%;
     }
-    #contactSupport .support-container .person div {width: 50%;}
+    #contactSupport .support-container .person div {width: 60%;}
     #contactSupport .support-container .person h1 {margin-bottom: 5px;}
     #contactSupport .support-container .person h1 span {display: none;}
+    #contactSupport .support-container .person a span {display: none;}
+    #contactSupport .support-container .person img {width: 25%;}
 }

@@ -26,13 +26,14 @@
 }
 #product-sec .container .product {
     width: 20%;
-    height: 300px;
+    height: 350px;
     background-color: #eaeaea;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 5px 0;
 }
 #product-sec .container .product img,
 #product-sec .container .product div {width: 90%; flex-wrap: wrap;}
@@ -43,5 +44,5 @@
 
 @media (max-width: 700px) {
     #product-sec .container .product-container {flex-wrap: wrap;}
-    #product-sec .container .product {width: 45%; margin-bottom: 50px;}
+    #product-sec .container .product {width: 45%; height: 250px; margin-bottom: 50px;}
 }
