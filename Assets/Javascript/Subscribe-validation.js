@@ -7,13 +7,11 @@ const subTitle = document.querySelector('.subTitle');
 let isSubValid = false ;
 
 
-
 const reseatSubscriptionInput = (elm) => {
     elm.classList.remove('subInvalid');
     elm.nextElementSibling.classList.add('hidden');
     elm.nextElementSibling.classList.remove('invalidBtn');
 }
-
 
 
 const validateSubscription = () => {
@@ -38,7 +36,7 @@ subForm.addEventListener('submit', (e) => {
 
     if (isSubValid == true) {
         subForm.remove();
-        subTitle.classList.add('hidden')
+        subTitle.classList.add('hidden');
         subThankYou.classList.remove('hidden');
     }
 })

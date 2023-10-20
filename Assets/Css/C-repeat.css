@@ -118,34 +118,49 @@ footer .foot-1 .links ul {
 footer .foot-1 .links ul li {margin-right: 20px;}
 footer .foot-1 .links ul li a {font-size: 20px; font-weight: 700}
 
-footer .foot-2 {background-color: var(--principal-color);}
-footer .foot-2 .container { height: 40px; align-items: center;}
-footer .foot-2 a {color: #ffffff;}
+
 
 footer .foot-1 .subscribe form  {margin: 5px 0 15px 0;}
+
 footer .foot-1 .subscribe input,
 footer .foot-1 .subscribe button {height: 40px; padding: 0 20px; font-size: 20px;}
+
+footer .foot-1 .subscribe button {margin-left: 5px;}
+
 footer .foot-1 .subscribe input {
-    width: 300px;
+    width: 100%;
     padding: 0 10px;
+    background-color: transparent;
+    margin-right: 2px;
+    color: var(--secondary-color);
+    font-weight: 600;
     border: 2px solid var(--secondary-color);
 }
+
 footer .foot-1 .subscribe p {font-weight: 600;}
 footer .foot-1 .subscribe a {text-decoration: underline ;}
 
+
 /* ========= */ 
 footer .foot-1 form {display: flex;}
-footer .foot-1 form input {margin-right: 2px; color: var(--secondary-color);}
 footer .foot-1 form input::placeholder {color: var(--secondary-color);}
-footer .foot-1 form  .subscribe-container {position: relative;}
-footer .foot-1 form  .subscribe-container i {
+
+footer .foot-1 form  .subscribe-container {
     position: relative;
-    top: 2px;
-    right: 30px;
+    background-color: var(--third-color);
 }
 
-.subscribe form input.subInvalid {border: 2px solid red;}
-.subscribe form input.valid {border: 2px solid green;}
+footer .foot-1 form  .subscribe-container i {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+footer .subscribe form input.subInvalid {border: 2px solid red;}
+footer .subscribe form input.subInvalid::placeholder {color: red;}
+
+footer .subscribe form input.valid {border: 2px solid #008000; color: #008000;}
+
 .subscribe form i.invalidBtn {color: red;}
 
 .hidden {display: none;} 
@@ -153,16 +168,22 @@ footer .foot-1 form  .subscribe-container i {
     width: 320px;
     align-items: center;
     padding: 20px 15px;
-    border: 2px solid #808080;
+    border: 2px solid var(--secondary-color);
 }
 .subThankYou i {
     font-size: 40px;
+    color: var(--secondary-color);
 }
 
 @media (max-width: 700px) {
     footer .foot-1 .subscribe input {width: 230px;}
 }
 
+
+
+footer .foot-2 {background-color: var(--principal-color);}
+footer .foot-2 .container { height: 40px; align-items: center;}
+footer .foot-2 a {color: #ffffff;}
 
 
 
