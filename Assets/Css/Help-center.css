@@ -56,13 +56,60 @@
     width: 75%;
 }
 #second .container .sec-content h1 {margin-bottom: 10px;}
+#second .container .sec-content p {text-align: justify;}
 
 @media (max-width: 700px) {
     #second .container .sec-content {width: 100%;}
     #second .container .sec-content div {
-        width: 70%;
+        width: 62%;
     }
 }
 
 
 #faq {margin-top: 80px;}
+
+#contactSupport {
+    margin-top: 80px;
+}
+#contactSupport .hero {
+    margin-bottom: 20px;
+}
+#contactSupport .hero h1 {font-size: 30px;font-weight: 900;}
+#contactSupport .hero h3 {font-size: 20px; text-align: justify;}
+#contactSupport .support-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#contactSupport .support-container .person {
+    width: 45%;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+#contactSupport .support-container .person h1 {margin-bottom: 20px; font-weight: 900;}
+#contactSupport .support-container .person h1 span {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 40px;
+}
+#contactSupport .support-container .person a {
+    font-weight: 700;
+    font-size: 20px;
+    /* padding-right: 20px; */
+}
+
+@media (max-width: 700px) {
+    #contactSupport .support-container .person {
+        width: 100%;
+    }
+    #contactSupport .support-container .person div {width: 50%;}
+    #contactSupport .support-container .person h1 {margin-bottom: 5px;}
+    #contactSupport .support-container .person h1 span {display: none;}
+}
