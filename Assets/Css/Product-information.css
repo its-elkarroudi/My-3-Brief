@@ -60,6 +60,20 @@
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
 }
+
+#product-section .product-information select.valid {
+    border: 2px solid green;
+    border-right: 8px solid green;
+    color: green;
+}
+#product-section .product-information select.invalid {
+    border: 2px solid red ;
+    border-right: 8px solid red;
+    color: red;
+}
+
+
+
 #product-section .product-information .addArea {
     margin-top: 10px;
     height: 40px;

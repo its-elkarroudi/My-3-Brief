@@ -39,7 +39,7 @@ form .big-container select {background-color: var(--third-color); color: var(--s
 form .big-container .input-container i {
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 25px;
     color: red;
     font-size: 30px;
     margin-left: 20px;
@@ -64,10 +64,22 @@ form .sending button {
     cursor: pointer;
 }
 
+form .big-container  select {outline: 0;}
+form .big-container  select.invalid {
+    color: red;
+    border:2px solid red;
+    border-right: 8px solid red;
+}
+form .big-container  select.valid {
+    color: green;
+    border:2px solid green;
+    border-right: 8px solid green;
+}
 /* INVALID INPUTS */ 
 form .big-container .input-container input.invalid, 
 form .big-container .input-container textarea.invalid {
     border:2px solid red;
+    border-right: 8px solid red;
     color: red;
 }
 form .big-container .input-container input.invalid::placeholder, 
@@ -79,6 +91,7 @@ form .big-container .input-container textarea.invalid::placeholder {
 form .big-container .input-container input.valid, 
 form .big-container .input-container textarea.valid {
     border:2px solid green;
+    border-right: 8px solid green;
     color: green;
 }
 form .big-container .input-container input.valid::placeholder, 
@@ -108,7 +121,7 @@ form .big-container .input-container textarea.valid::placeholder {
     form .big-container .input-container i {
         font-size: 20px;
         top: 15px;
-        right: 10px;
+        right: 15px;
     }
     form .big-container {
         height: 120px;
