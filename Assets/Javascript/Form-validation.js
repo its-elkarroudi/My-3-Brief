@@ -85,6 +85,7 @@ form.addEventListener('submit', (e) => {
     validateInputs();
 
     if (isFormValid == true) {
+        form.submit();
         form.remove();
         thankYou.classList.remove('hidden');
     }

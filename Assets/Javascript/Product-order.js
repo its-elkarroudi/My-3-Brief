@@ -1,5 +1,5 @@
 
-const productForm = document.querySelector('form');
+const productForm = document.querySelector('#productForm');
 
 const sizeInput = document.querySelector('select[name="clothesSize"');
 // console.log(sizeInput);
@@ -56,7 +56,7 @@ productForm.addEventListener('submit', (e) => {
     orderValidate();
 
     if (orderValidate()) {
-        FormData.submit();
+        productForm.submit();
     }
 
 })

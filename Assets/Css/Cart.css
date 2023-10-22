@@ -1,0 +1,164 @@
+#cart {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+}
+#cart .container {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#cart .container .product-list {
+    margin-top: 50px;
+    width: 60%;
+}
+#cart .container .product-list .product {
+    margin-bottom: 20px;
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    padding: 10px 20px;
+    min-height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+}
+#cart .container .product-list .product .product-info {
+    height: 100px;
+    margin-left: 20px;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#cart .container .product-list .product .product-info span {
+    font-weight: 600;
+}
+#cart .container .product-list .product .product-special-info {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#cart .container .product-list .product .product-special-info button {
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+#cart .container .product-list .product .product-special-info button:hover {
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+#cart .container .product-list .product .product-special-info input {
+    width: 70px;
+    height: 30px;
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    border-right: 8px solid var(--secondary-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+#cart .container .product-list .product .product-special-info span {
+    font-weight: 800;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+
+
+
+#cart .container .order-summary {
+    margin-top: 50px;
+    height: 65vh;
+    width: 30%;
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    padding: 30px 20px;
+
+}
+#cart .container .order-summary form {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#cart .container .order-summary .summary-info div{
+    margin-bottom: 15px;
+}
+#cart .container .order-summary  button {
+    background-color: var(--secondary-color);
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+#cart .container .order-summary  button.checkout {width: 100%; margin-top: 10px;}
+#cart .container .order-summary span {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+#cart .container .order-summary .promo {
+    padding: 0 20px;
+    height: 50px;
+    width: 100%;
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    align-items: center;
+}
+#cart .container .order-summary .promo button {
+    padding: 0 10px;
+}
+#cart .container .order-summary .promo input {
+    height: 40px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+#cart .container .order-summary .promo input::placeholder {color: var(--secondary-color);}
+
+
+
+@media (max-width: 700px) {
+    #cart .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #cart .container .product-list {width: 100%;}
+    #cart .container .product-list .product {
+        display: flex;
+        flex-direction: column;
+    }
+    #cart .container .product-list .product .d-flex {justify-content: space-between;}
+    #cart .container .product-list .product .product-info {text-align: right; position: relative;}
+    #cart .container .product-list .product .product-info::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        width: 20px;
+        height: 3px;
+        background-color: var(--secondary-color);
+    }
+    #cart .container .product-list .product .product-special-info {
+        height: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #cart .container .product-list .product .product-special-info button {padding: 5px 10px;}
+
+
+
+
+    #cart .container .order-summary {width: 100%;}
+    #cart .container .order-summary {height: 50vh;}
+    #cart .container .order-summary form {height: 40vh;}
+    #cart .container .order-summary .summary-info div{ margin-bottom: 5px;}
+    #cart .container .order-summary .promo {margin-top: 20px;}
+    #cart .container .order-summary .promo input {width: 70%;}
+}   

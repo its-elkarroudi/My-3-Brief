@@ -35,6 +35,7 @@ subForm.addEventListener('submit', (e) => {
     validateSubscription();
 
     if (isSubValid == true) {
+        subForm.submit();
         subForm.remove();
         subTitle.classList.add('hidden');
         subThankYou.classList.remove('hidden');

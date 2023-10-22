@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONTS AWESOME -->
+    <script src="https://kit.fontawesome.com/da6b47f324.js" crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="../../Css/C-repeat.css">
+    <link rel="stylesheet" href="../../Css/Account.css">
+
+    <title>Login Page</title>
+</head>
+<body>
+    
+    <!-- START HEADER SECTION -->
+    <header>
+
+        <div class="head-1">
+            <div class="container">
+                <a href="../../Html/Faq.html">faq</a>
+                <a href="../../Html/Help-center.html">help center</a>
+            </div>
+        </div>
+
+        <div class="head-2">
+            <div class="container d-flex">
+
+                <div class="logo">
+                    <a href="../../../index.html">
+                        <img src="../../Img/Logo/logo.png" alt="Website Logo">
+                    </a>
+                </div>
+
+                <div class="links">
+
+                    <ul class="nav-menu">
+                        <li><a href="../../../index.html">home</a></li>
+                        <li><a href="../../Html/Man-page.html">men</a></li>
+                        <li><a href="../../Html/Women-page.html">women</a></li>
+                        <li><a href="../../Html/Contact-us.html">contact us</a></li>
+                    </ul>
+
+                    <a href="../Cart.html" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <a href="Login.html" class="loginIcon">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+
+                    <i class="fa-solid fa-bars navBtn"></i>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER SECTION -->
+
+    <!-- START LOGIN SECTION -->
+    <section id="login">
+        <div class="container">
+
+            <div class="user-info">
+                <form action="" id="loginForm">
+
+                    <h1>log in </h1>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+
+                    <input type="email" name="accountEmail" placeholder="email" class="">
+                    <input type="password" name="accountPassword" placeholder="password" minlength="8" maxlength="20" class="">
+                    <div class="passwordForget">
+                        <a href="#"><u>forget your password ?</u></a>
+                    </div>
+                    <button type="submits">log in</button>
+                    <!-- <hr> -->
+                    
+                    <hr>
+                    <div class="googleLogin">
+                        <a href="#"> <i class="fa-brands fa-google"></i>log in with google</a>
+                    </div>
+
+                    <!-- <div class="facebookLogin">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i> log in with facebook</a>
+                    </div> -->
+
+                    <h2>don't have an account ? <a href="Sign-up.html"><u>sign up</u></a></h2>
+
+                </form>
+            </div>
+
+            <div class="head">
+                <h1>
+                    <i class="fa-regular fa-face-laugh-wink"></i> <br>
+                    myStore, <br>
+                    your new clothing brand !
+                </h1>
+            </div>
+
+        </div>
+    </section>
+    <!-- END LOGIN SECTION -->
+
+
+    
+    <!-- START FOOTER SECTION -->
+    <footer>
+
+        <div class="foot-1">
+            <div class="container d-flex">
+
+                <div class="links">
+                    <a href="../../../index.html">
+                        <img src="../../Img/Logo/logo.png" alt="website logo">
+                    </a>
+
+                    <ul>
+                        <li><a href="../../../index.html">home</a></li>
+                        <li><a href="../../Html/Man-page.html">men</a></li>
+                        <li><a href="../../Html/Women-page.html">women</a></li>
+                        <li><a href="../../Html/Contact-us.html">contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribe">
+                    <h2 class="subTitle">subscribe</h2>
+
+                    <form action="" id="subscribeForm">
+                        <div class="subscribe-container">
+                            <input type="email" placeholder="email address" name="subEmail" class="">
+                            <i class="fa-solid fa-circle-exclamation hidden subIcon"></i>
+                        </div>
+                        <button type="submit" class="sp-btn subButton" >send</button>
+                    </form>
+
+                    <div class="subThankYou d-flex hidden">
+                        <h2>Thank You For Subscribing</h2>
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+
+                    <p>by subscribing you agree to our <a href="">privacy policy</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="foot-2">
+            <div class="container d-flex">
+                <a href="../Faq.html">faq</a>
+                <a href="">all right reserved</a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+
+
+
+
+
+    <script src="../../Javascript/Header-scoll.js"></script>
+    <script src="../../Javascript/Responsive/C-repeat.js"></script>
+    <script src="../../Javascript/Burger-menu.js"></script>
+    <script src="../../Javascript/Login-validation.js"></script>
+    <script src="../../Javascript/Subscribe-validation.js"></script>
+
+</body>
+</html>

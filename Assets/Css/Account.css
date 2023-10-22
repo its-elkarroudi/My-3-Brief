@@ -1,0 +1,164 @@
+#login {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    /* background-color: aqua; */
+}
+#signUp .container .login-info {
+    min-height: 75vh;
+}
+#signUp .container input[name="confirmPassword"] {margin-bottom: 20px;}
+#login .container,
+#signUp .container {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .user-info {
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    height: 70vh;
+    width: 50%;
+}
+.container .user-info form {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .user-info form h1 {font-weight: 900;}
+.container .user-info form h3 {margin: 0 0 25px 0;}
+.container .user-info form input,
+.container .user-info form button{
+    width: 70%;
+    height: 45px;
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.container .user-info form hr {
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+    height: 4px;
+    width: 70%;
+}
+.container .user-info form input {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    color:  var(--secondary-color);
+}
+/* invalid input */
+.container .user-info form input.invalid {
+    border: 2px solid red;
+    border-right: 8px solid red;
+    color: red;
+}
+.container .user-info form input.invalid::placeholder {color: red;}
+/* valid input */
+.container .user-info form input.valid {
+    border: 2px solid green;
+    border-right: 8px solid green;
+    color: green;
+}
+.container .login-info form input.valid::placeholder {color: green;}
+
+
+.container .user-info form input::placeholder {color: var(--secondary-color);}
+.container .user-info form button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+}
+.passwordForget {
+    width: 70%;
+    text-align: right;
+    margin-bottom: 20px;
+    font-weight: 700;
+    /* background-color: var(--secondary-color); */
+}
+
+.container .user-info .googleLogin, 
+.container .user-info .facebookLogin {
+    width: 70%;
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.container .user-info .googleLogin a,
+.container .user-info .facebookLogin a {
+    color: var(--secondary-color);
+}
+.container .user-info .googleLogin i,
+.container .user-info .facebookLogin i {margin-right: 10px;}
+
+.container .user-info .googleLogin:hover, 
+.container .user-info .facebookLogin:hover {
+    background-color: var(--secondary-color);
+    transition-duration: 1s;
+}
+.container .user-info .googleLogin:hover a,
+.container .user-info .facebookLogin:hover a {
+    color: #fff;
+    transition-duration: 1s;
+}
+.container .user-info form h2 {margin-top: 20px; font-size: 20px;}
+
+
+
+
+
+
+
+.container .head {
+    width: 30%;
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary-color);
+    padding: 50px 50px;
+    text-align: left;
+}
+.container .head i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    /* margin-left: 20px; */
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    #login .container,
+    #signUp .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .container .user-info {width: 100%;}
+
+    .container .user-info form input,
+    .container .user-info form button,
+    .container .user-info form hr,
+    .passwordForget,
+    .container .user-info .googleLogin, 
+    .container .user-info .facebookLogin { width: 90%;}
+
+
+
+    .container .head {
+        width: 100%;
+        padding: 20px 50px;
+        margin: 50px 0;
+    }
+    .container .head h1 {font-size: 20px;}
+    .container .head i {font-size: 40px; margin-bottom: 12px;}
+
+
+}
