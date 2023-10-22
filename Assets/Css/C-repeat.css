@@ -89,23 +89,27 @@ header .head-2 .container i.navBtn{
     cursor: pointer;
     display: none;
 }
+
 /* NAV BAR  ============== */
 @media (max-width: 700px) {
-    /* header .head-2 .container i.navBtn {display: block;} */
-    /* header .nav-menu {
+    header .head-2 .container i.navBtn {display: block;}
+    header .nav-menu {
+        height: 100vh;
+        width: 70%;
+        z-index: 1;
         position: fixed;
-        right:-100%;
-        top: 120px;
-        background-color: #000;
-        width: 100%;
+        left:-100%;
+        top: 0;
+        background-color: var(--secondary-color);
+        border-right: 5px solid var(--principal-color);
         flex-direction: column;
-        text-align: center;
         transition: 1s;
-    }  */
-     /* header .nav-menu li {
+    } 
+    header .nav-menu li {
         margin: 15px 0;
-    }  */
-    /* header .nav-menu li a {color: #fff;} */
+    } 
+    /* header .nav-menu li.hidden {display: flex;} */
+    header .nav-menu li a {color: #fff; font-size: 40px;}
     header .nav-menu.active {left: 0;}
 }  
 
