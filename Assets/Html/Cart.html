@@ -139,6 +139,11 @@
                             <h2>taxes :</h2>
                             <span>5 %</span>
                         </div>
+
+                        <div class="d-flex">
+                            <h2>promo code :</h2>
+                            <span>0</span>
+                        </div>
     
                         <div class="d-flex">
                             <h2>shipping fee :</h2>
@@ -146,8 +151,8 @@
                         </div>
 
                         <div class="promo d-flex">
-                            <input type="text" name="promoCode" placeholder="promo code">
-                            <button>apply</button>
+                            <input type="text" name="promoCode" placeholder="promo code" required>
+                            <button type="submit">apply</button>
                         </div>
                     </div>
 
@@ -157,9 +162,10 @@
                             <span>520 dh</span>
                         </div>
     
-                        <button class="checkout">checkout</button>
+                        
                     </div>
                 </form>
+                <button class="checkout">checkout</button>
             </div>
 
         </div>
@@ -219,9 +225,17 @@
 
 
     <script src="../Javascript/Header-scoll.js"></script>
-    <script src="../Javascript/Responsive/C-repeat.js"></script>
+    <!-- <script src="../Javascript/Responsive/C-repeat.js"></script> -->
     <script src="../Javascript/Burger-menu.js"></script>
     <script src="../Javascript/Subscribe-validation.js"></script>
+
+    <script>
+
+    const checkout = document.querySelector('.checkout');
+        checkout.addEventListener("click", function() {
+            window.location.href = "Checkout.html";
+        });
+    </script>
 
 </body>
 </html>

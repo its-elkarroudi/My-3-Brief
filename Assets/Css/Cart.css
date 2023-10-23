@@ -71,7 +71,7 @@
 
 
 
-#cart .container .order-summary {
+.container .order-summary {
     margin-top: 50px;
     height: 65vh;
     width: 30%;
@@ -80,29 +80,29 @@
     padding: 30px 20px;
 
 }
-#cart .container .order-summary form {
-    height: 55vh;
+.container .order-summary form {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#cart .container .order-summary .summary-info div{
+.container .order-summary .summary-info div{
     margin-bottom: 15px;
 }
-#cart .container .order-summary  button {
+.container .order-summary  button {
     background-color: var(--secondary-color);
     height: 40px;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
 }
-#cart .container .order-summary  button.checkout {width: 100%; margin-top: 10px;}
-#cart .container .order-summary span {
+.container .order-summary  button.checkout {width: 100%; margin-top: 10px;}
+.container .order-summary span {
     font-weight: 700;
     font-size: 22px;
     color: var(--secondary-color);
 }
-#cart .container .order-summary .promo {
+.container .order-summary .promo {
     padding: 0 20px;
     height: 50px;
     width: 100%;
@@ -110,17 +110,17 @@
     border: 2px solid var(--secondary-color);
     align-items: center;
 }
-#cart .container .order-summary .promo button {
+.container .order-summary .promo button {
     padding: 0 10px;
 }
-#cart .container .order-summary .promo input {
+.container .order-summary .promo input {
     height: 40px;
     background-color: transparent;
     font-size: 20px;
     font-weight: 600;
     color: var(--secondary-color);
 }
-#cart .container .order-summary .promo input::placeholder {color: var(--secondary-color);}
+.container .order-summary .promo input::placeholder {color: var(--secondary-color);}
 
 
 
@@ -155,10 +155,10 @@
 
 
 
-    #cart .container .order-summary {width: 100%;}
-    #cart .container .order-summary {height: 50vh;}
-    #cart .container .order-summary form {height: 40vh;}
-    #cart .container .order-summary .summary-info div{ margin-bottom: 5px;}
-    #cart .container .order-summary .promo {margin-top: 20px;}
-    #cart .container .order-summary .promo input {width: 70%;}
+    .container .order-summary {width: 100%;}
+    .container .order-summary {height: 58vh;}
+    .container .order-summary form {height: 45vh;}
+    .container .order-summary .summary-info div{ margin-bottom: 5px;}
+    .container .order-summary .promo {margin-top: 20px;}
+    .container .order-summary .promo input {width: 70%;}
 }   

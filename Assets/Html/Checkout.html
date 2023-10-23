@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONTS AWESOME -->
+    <script src="https://kit.fontawesome.com/da6b47f324.js" crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="../Css/C-repeat.css">
+    <link rel="stylesheet" href="../Css/Cart.css">
+    <link rel="stylesheet" href="../Css/Checkout.css">
+
+    <title>Cart Page</title>
+</head>
+<body>
+    
+
+    <!-- START CART SECTION -->
+    <section id="checkout">
+        <div class="container">
+
+            <div class="client-information">
+
+                <div class="client-details">
+                    <div class="title">
+                        <span>01</span>
+                        <h1>client information</h1>
+                    </div>
+                    <div class="content-information">
+
+                        <form action="">
+                            <div class="d-flex">
+                                <input type="text" placeholder="first name" minlength="8">
+                                <input type="text" placeholder="last name" minlength="8">
+                            </div>
+                            <input type="email" placeholder="email address">
+                        </form>
+                        
+                    </div>
+                </div>
+
+
+                <div class="delivery-details">
+                    <div class="title">
+                        <span>02</span>
+                        <h1>delivery information</h1>
+                    </div>
+                    <div class="content-information">
+
+                        <form action="">
+                            <div class="d-flex">
+                                <select name="country">
+                                    <option value="morocco">morocco</option>
+                                </select>   
+
+                                <select name="region">
+                                    <option value="1">Tanger-Tétouan-Al Hoceïma</option>
+                                    <option value="2">L'Oriental</option>
+                                    <option value="3">Fès-Meknès</option>
+                                    <option value="4">Rabat-Salé-Kénitra </option>
+                                    <option value="5">Béni Mellal-Khénifra</option>
+                                    <option value="6">Casablanca-Settat  </option>
+                                    <option value="7">Marrakech-Safi</option>
+                                    <option value="8">Drâa-Tafilalet</option>
+                                    <option value="9">Souss-Massa</option>
+                                    <option value="10"> Guelmim-Oued Noun</option>
+                                    <option value="11">Laâyoune-Sakia El Hamra</option>
+                                    <option value="12">Dakhla-Oued Ed-Dahab</option>
+                                </select>
+
+                                <!-- <input type="text" placeholder="city" minlength="5"> -->
+                            </div>
+
+                            <div class="d-flex">
+                                <input type="text" placeholder="city" minlength="8">
+                                <input type="number" placeholder="city zip code" minlength="8">
+                            </div>
+
+                            <input type="text" placeholder="address line 1">
+
+                            <div class="d-flex">
+                                <input type="text" placeholder="phone number # 1" minlength="8">
+                                <input type="text" placeholder="phone number # 2 ( optical )" minlength="8">
+                            </div>
+
+                            <h3>** Our delivery fees are determined based on the chosen delivery time</h3>
+                            <select name="deliveryMethod">
+                                <option value="normal">normal delivery ( 2 - 4 days // 20 dh )</option>
+                                <option value="fast">fast delivery ( 1 - 2 days // 30 dh  ) </option>
+                                <option value="fast">free delivery ( < 7 days // free ) </option>
+                            </select>
+                        </form>
+                        
+                    </div>
+                </div>
+
+                <div class="payment-details">
+                    <div class="title">
+                        <span>03</span>
+                        <h1>payments information</h1>
+                    </div>
+                    <div class="payment-information">
+
+                        <form action="">
+                            <!-- <input type="checkbox" name="cash_on_deliery" id="cash_on_deliery"> 
+                            <label for="cash_on_deliery">cash on delivery</label> -->
+                            <h4>for now we only do cash on delivery .</h4>
+                        </form>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="order-summary">
+                <form action="">
+
+                    <h1>summary</h1>
+
+                    <div class="summary-info">
+                        <div class="d-flex">
+                            <h2>sub total :</h2>
+                            <span>599 dh</span>
+                        </div>
+    
+                        <div class="d-flex">
+                            <h2>taxes :</h2>
+                            <span>5 %</span>
+                        </div>
+
+                        <div class="d-flex">
+                            <h2>promo code :</h2>
+                            <span>0</span>
+                        </div>
+    
+                        <div class="d-flex">
+                            <h2>shipping fee :</h2>
+                            <span>not calculated</span>
+                        </div>
+
+                        <div class="promo d-flex">
+                            <input type="text" name="promoCode" placeholder="promo code" required>
+                            <button type="submit">apply</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex">
+                            <h2>total :</h2>
+                            <span>520 dh</span>
+                        </div>
+    
+                        
+                    </div>
+                </form>
+                <button class="orderConfirmation checkout">pay now</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- END CART SECTION -->
+
+
+    <script>
+
+        const checkout = document.querySelector('.orderConfirmation');
+            checkout.addEventListener("click", function() {
+                window.location.href = "ad.html";
+            });
+    </script>
+
+
+</body>
+</html>
