@@ -7,10 +7,10 @@
 }
 #hero .container {
     height: 300px;
-    background-color: var(--third-color);
-    /* background-image: url();
+    
+    background-image: url(../Img/Background/index-hero.jpg);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -120,4 +120,27 @@
     #ads .container .ad-1, 
     #ads .container .ad-2 {width: 100%;}
 
+}
+
+
+/* =========== */ 
+#categories .category:nth-child(1) {
+    background-image: url(../Img/Background/men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categories .category:nth-child(2) {
+    background-image: url(../Img/Background/women-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categories .category:nth-child(3) {
+    background-image: url(../Img/Background/all-products.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categories .category:nth-child(4) {
+    background-image: url(../Img/Background/black-friday.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
