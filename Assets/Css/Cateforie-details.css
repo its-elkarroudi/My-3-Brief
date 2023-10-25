@@ -47,3 +47,7 @@
     #product-sec .container .product-container {flex-wrap: wrap;}
     #product-sec .container .product {width: 45%; height: 250px; margin-bottom: 50px;}
 }
+
+.product-container {
+    margin-bottom: 30px;
+}
